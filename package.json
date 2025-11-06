@@ -1,0 +1,20 @@
+{
+  "name": "my-life-story",
+  "version": "1.0.0",
+  "description": "AI 자서전 & 오디오북 생성 플랫폼",
+  "type": "module",
+  "scripts": {
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "cd server && node server.js",
+    "client": "cd client && npm run dev",
+    "install-all": "npm install && cd client && npm install && cd ../server && npm install"
+  },
+  "keywords": ["ai", "autobiography", "audiobook"],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
+
+

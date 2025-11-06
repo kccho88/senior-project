@@ -1,0 +1,77 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-primary-50 text-primary-900 font-sans;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-primary-600 hover:bg-primary-700 text-white font-semibold py-3 px-6 rounded-xl transition-all duration-200 shadow-md hover:shadow-lg;
+  }
+
+  .btn-secondary {
+    @apply bg-white hover:bg-primary-100 text-primary-800 font-semibold py-3 px-6 rounded-xl transition-all duration-200 border-2 border-primary-300;
+  }
+
+  .card {
+    @apply bg-white rounded-2xl shadow-lg p-6 border border-primary-200;
+  }
+
+  .input-field {
+    @apply w-full px-4 py-3 rounded-xl border-2 border-primary-300 focus:border-primary-500 focus:outline-none transition-colors text-lg;
+  }
+}
+
+/* 부드러운 애니메이션 */
+.fade-in {
+  animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* 음성 녹음 애니메이션 */
+.pulse-ring {
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+/* 스크롤바 스타일 */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f2e8e5;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #bfa094;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #a18072;
+}
+
+
