@@ -2,6 +2,14 @@
 
 AI 자서전 & 오디오북 생성 플랫폼
 
+[![Deploy to GitHub Pages](https://github.com/kccho88/senior-project/actions/workflows/deploy.yml/badge.svg)](https://github.com/kccho88/senior-project/actions/workflows/deploy.yml)
+
+## 🌐 라이브 데모
+
+**배포된 사이트:** [https://kccho88.github.io/senior-project/](https://kccho88.github.io/senior-project/)
+
+> 💡 **참고:** 백엔드 서버가 필요한 기능(AI 인터뷰, 오디오북 생성 등)은 로컬 환경에서만 작동합니다.
+
 ## 🎯 프로젝트 소개
 
 50~70대 사용자가 자신의 인생 이야기를 AI와 대화하며 기록하면,
@@ -67,6 +75,28 @@ npm run dev
 **Backend:** Node.js, Express, MongoDB  
 **AI:** OpenAI GPT-4, Whisper, DALL-E  
 **Audio:** ElevenLabs TTS  
-**Storage:** AWS S3
+**Storage:** AWS S3  
+**배포:** GitHub Pages, GitHub Actions
+
+## 📚 문서
+
+- [설치 가이드](SETUP_GUIDE.md)
+- [배포 가이드](DEPLOY_GUIDE.md)
+- [API 흐름](API_FLOW.md)
+- [프로젝트 요약](PROJECT_SUMMARY.md)
+
+## 🚀 배포하기
+
+### GitHub Pages 자동 배포
+
+이 프로젝트는 `main` 브랜치에 푸시할 때마다 자동으로 GitHub Pages에 배포됩니다.
+
+```bash
+git add .
+git commit -m "feat: 새로운 기능 추가"
+git push origin main
+```
+
+자세한 내용은 [배포 가이드](DEPLOY_GUIDE.md)를 참조하세요.
 
 
