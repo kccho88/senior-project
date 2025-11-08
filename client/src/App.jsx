@@ -8,7 +8,7 @@ import AudioBook from './pages/AudioBook';
 
 function App() {
   return (
-    <Router>
+    <Router basename="/senior-project">
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/interview" element={<Interview />} />
